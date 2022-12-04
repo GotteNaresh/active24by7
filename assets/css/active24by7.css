@@ -1,0 +1,25 @@
+.active24by7-logo {
+    width: 40px;
+    height: 40px;
+}
+#header .logo a {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 25px;
+}
+#header {
+    background-color: #0150ad;
+}
+.logo {
+    background: #f8f9fa;
+}
+.logo-title-1 {
+    color: green;
+    font-weight: bold;
+}
+.logo-title-2 {
+    color: red;
+    font-weight: bold;
+}
