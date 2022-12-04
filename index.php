@@ -98,7 +98,7 @@ include('./backend/contactus.php');
       ?>
       <section class="status-message" class="d-flex justify-cntent-center align-items-center">
         <div class='success'> 
-      echo "Your Information has been Submitted successfully.And we will call to you soon!..";
+          Your Information has been Submitted successfully.And we will call to you soon!..
         </div>
       </section>
     <?php
