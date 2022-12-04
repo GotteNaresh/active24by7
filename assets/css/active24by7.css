@@ -23,3 +23,34 @@
     color: red;
     font-weight: bold;
 }
+.carousel-container .slide {
+height: 300px;
+width: 626px;
+}
+#hero {
+    height: 90vh;
+}
+.contact .php-email-form .contact-btn {
+    border: 0;
+    padding: 10px 32px;
+    color: #0880e8;
+    transition: 0.4s;
+    border-radius: 50px;
+    border: 2px solid #0880e8;
+    background: #fff;
+}
+.contact-us-form label.error {
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+}
+.status-message {
+    height: 30px;
+    text-align: center;
+    background: #f8f9fa;
+}
+.status-message .success {
+    color: green;
+    font-size: 20px;
+    font-weight: 900;
+}

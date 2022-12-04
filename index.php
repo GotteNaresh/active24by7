@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/active24by7-images/active24by7-profile-pic.jpg" rel="icon">
+  <link href="assets/img/active24by7-images/active24by7-profile-pic.jpg" rel="active24by7-logo-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -29,22 +29,19 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/active24by7.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Anyar - v4.9.1
-  * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  
 </head>
-
+<?php
+$contactus = 0;
+include('./backend/contactus.php');
+?>
 <body>
 
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">support@active24by7.com</a>
+        <i class="bi bi-envelope-fill"></i><a href="mailto:support@active24by7.com">support@active24by7.com</a>
         <i class="bi bi-phone-fill phone-icon"></i> +91 8688388672
       </div>
       <!-- <div class="cta d-none d-md-block">
@@ -96,36 +93,49 @@
 
     </div>
   </header><!-- End Header -->
-
+    <?php
+    if($contactus === 1) {
+      ?>
+      <section class="status-message" class="d-flex justify-cntent-center align-items-center">
+        <div class='success'> 
+      echo "Your Information has been Submitted successfully.And we will call to you soon!..";
+        </div>
+      </section>
+    <?php
+    }
+    ?>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
       <!-- Slide 1 -->
-      <h2>Up Coming Courses Slots</h2>
+      <!-- <h2>Up Coming Courses Slots</h2> -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">ReactJs</span></h2>
-          <p class="animate__animated animate__fadeInUp">Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing and way more!.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <img class="slide" src="./assets/img/active24by7-images/slides/Facebook_Ad_Naresh_Gotte.png" />
+          <!-- <h2 class="animate__animated animate__fadeInDown">ReactJs</span></h2>
+          <p class="animate__animated animate__fadeInUp">Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing and way more!.</p> -->
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Register Now</a>
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">MERN FULL STACK </h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <img class="slide" src="./assets/img/active24by7-images/slides/Facebook_Ad_Naresh_Gotte.png" />
+          <!-- <h2 class="animate__animated animate__fadeInDown">ReactJs</span></h2>
+          <p class="animate__animated animate__fadeInUp">Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing and way more!.</p> -->
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Register Now</a>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">HTML </h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <img class="slide" src="./assets/img/active24by7-images/slides/Facebook_Ad_Naresh_Gotte.png" />
+          <!-- <h2 class="animate__animated animate__fadeInDown">ReactJs</span></h2>
+          <p class="animate__animated animate__fadeInUp">Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing and way more!.</p> -->
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Register Now</a>
         </div>
       </div>
 
@@ -959,10 +969,16 @@
 
           <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form  method="post" role="form" class="contact-us-form php-email-form" name="contact-us-form" >
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Your First Name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Your Last Name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="Your Phone" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
@@ -974,12 +990,15 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
+              <!-- <div class="form-group mt-3">
+                <textarea class="form-control" name="address" rows="5" placeholder="Adress" required></textarea>
+              </div> -->
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" class="contact-btn"  name='contactformsubmit'>Send Message</button></div>
             </form>
 
           </div>
@@ -1043,7 +1062,7 @@
               Telangana<br>
               India <br><br>
               <strong>Phone:</strong> +91 8688388672<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Email:</strong> support@activeby7.com<br>
             </p>
 
           </div>
@@ -1087,10 +1106,14 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+  <script src="assets/js/contactus.js"></script>
 
 </body>
 
