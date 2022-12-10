@@ -46,7 +46,7 @@ width: 626px;
     border: 2px solid #0880e8;
     background: #fff;
 }
-.contact-us-form label.error {
+.contact-us-form label.error, .lead-us-form label.error {
     color: red;
     font-size: 16px;
     font-weight: 600;
@@ -205,4 +205,13 @@ color: #FF0006;
     color: #fff;
     font-size: 18px;
     line-height: 1;
+}
+#pricing .col-lg-3, .pricing .box {
+    height: 512px;
+}
+.nav-link:hover {
+    text-decoration: none;
+}
+.about .content ul i {
+color: #006a4d;
 }
