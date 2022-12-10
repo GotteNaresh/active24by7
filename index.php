@@ -42,7 +42,7 @@ include('./backend/contactus.php');
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:support@active24by7.com">support@active24by7.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +91 8688388672
+        <i class="bi bi-phone-fill phone-icon"></i> <a>+91 8688388672</a>
       </div>
       <!-- <div class="cta d-none d-md-block">
         <a href="#about" class="scrollto">Get Started</a>
@@ -54,7 +54,7 @@ include('./backend/contactus.php');
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html"><img src='./assets/img/active24by7-images/active24by7-profile-pic.jpg' class="active24by7-logo"/> <span class="logo-title-1">Active</span> <span class="logo-title-2">24/7</span></a></h1>
+      <h1 class="logo"><a href="index.html"><img src='./assets/img/active24by7-images/active24by7_logo_new-22.png' class="active24by7-logo"/> <span class="logo-title-1">Active</span> <span class="logo-title-2">24/7</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -93,17 +93,7 @@ include('./backend/contactus.php');
 
     </div>
   </header><!-- End Header -->
-    <?php
-    if($contactus === 1) {
-      ?>
-      <section class="status-message" class="d-flex justify-cntent-center align-items-center">
-        <div class='success'> 
-          Your Information has been Submitted successfully.And we will call to you soon!..
-        </div>
-      </section>
-    <?php
-    }
-    ?>
+    
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
@@ -151,7 +141,7 @@ include('./backend/contactus.php');
   </section><!-- End Hero -->
 
   <main id="main">
-
+  
     <!-- ======= Icon Boxes Section ======= -->
     <section id="icon-boxes" class="icon-boxes">
       <div class="container">
@@ -168,7 +158,7 @@ include('./backend/contactus.php');
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Freelacing Technical Support</a></h4>
+              <h4 class="title"><a href="">Freelancing  Technical Support</a></h4>
               <p class="description">we are giving Technical support to Frontend and Backend Web Applications</p>
             </div>
           </div>
@@ -202,7 +192,7 @@ include('./backend/contactus.php');
 
         <div class="section-title">
           <h2>About Us</h2>
-          <p>The Active 24/7 is providing the freelacing tectnical support, Online Training , Offline Training and Conducting the mock Interviews.</p>
+          <p>The Active 24/7 is providing the Freelancing  tectnical support, Online Training , Offline Training and Conducting the mock Interviews.</p>
         </div>
 
         <div class="row content">
@@ -311,7 +301,7 @@ include('./backend/contactus.php');
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Active24by7 is providing the services are web design, web Development, Project Management, Online and Offline Training, Freelacing Technical Support, Conduction the Mock Intrviews and Preparing the resume.</p>
+          <p>Active24by7 is providing the services are web design, web Development, Project Management, Online and Offline Training, Freelancing  Technical Support, Conduction the Mock Intrviews and Preparing the resume.</p>
         </div>
 
         <div class="row">
@@ -339,7 +329,7 @@ include('./backend/contactus.php');
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
               <i class="bi bi-brightness-high"></i>
-              <h4><a href="#">Freelacing Technical Support</a></h4>
+              <h4><a href="#">Freelancing  Technical Support</a></h4>
               <p>We are supporting of Web Design and Web Development Tools are: HTML, CSS, SASS, Flexbox, JavaScript, Jquery, NodeJs, ExpressJs, MongoDB, MySQL and Restful API's Integration and creation </p>
             </div>
           </div>
@@ -968,7 +958,20 @@ include('./backend/contactus.php');
           </div>
 
           <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-
+              <?php
+              if($contactus === 1) {
+              ?>
+              <section class="status-message" >
+              <div class='success'> 
+              Your Information has been Submitted successfully.And we will call to you soon!..
+              <script>
+              alert("Your Information has been Submitted successfully.And we will call to you soon!..");
+              </script>
+              </div>
+              </section>
+              <?php
+              }
+              ?>
             <form  method="post" role="form" class="contact-us-form php-email-form" name="contact-us-form" >
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -1051,7 +1054,7 @@ include('./backend/contactus.php');
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Online & Offline Training</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Freelacing Technical Support</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Freelancing  Technical Support</a></li>
             </ul>
           </div>
 
@@ -1069,7 +1072,7 @@ include('./backend/contactus.php');
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About Active 24 / 7</h3>
-            <p>The Active 24/7 is providing the freelacing tectnical support, Online Training , Offline Training and Conducting the mock Interviews.</p>
+            <p>The Active 24/7 is providing the Freelancing  tectnical support, Online Training , Offline Training and Conducting the mock Interviews.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
