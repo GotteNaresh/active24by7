@@ -14,5 +14,18 @@ Boostrap Template :
 
 https://bootstrapmade.com/demo/Anyar/
 
+Important color
+
+primary green : #006a4d
+
+more dard green : #024731;
+
+dark green : #00553e, #00553e
+
+light green : #006a4d
+
+
+
+
 
 

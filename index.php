@@ -16,7 +16,7 @@ include('./includes/hero_section.php');
 ?>
   <main id="main">
     <?php
-    include('./includes/incon_boxes_section.php');
+    include('./includes/icon_boxes_section.php');
     include('./components/aboutus.php');
     include('./components/services.php');
     include('./components/calltoaction.php');

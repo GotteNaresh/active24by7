@@ -58,11 +58,11 @@
         <h3>About Active 24 / 7</h3>
         <p>The Active 24/7 is providing the Freelancing  tectnical support, Online Training , Offline Training and Conducting the mock Interviews.</p>
         <div class="social-links mt-3">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.youtube.com/@nareshgotte" class="youtube"><i class="bx bxl-youtube"></i></a>
+          <a href="https://www.facebook.com/active24by7/" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/active24by07/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/active24by7" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://twitter.com/active24by7" class="twitter"><i class="bx bxl-twitter"></i></a>
         </div>
       </div>
 

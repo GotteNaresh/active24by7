@@ -67,9 +67,9 @@ $(function() {
           maxlength: "Please enter your password must not be more than 20 characters long"
         },
         confirmpassword: {
-            required: "Please enter your password",
-            minlength: "PPlease enter your password must be min 5 characters long",
-            maxlength: "Please enter your password must not be more than 20 characters long",
+            required: "Please enter your confirm password",
+            minlength: "PPlease enter your confirm password must be min 5 characters long",
+            maxlength: "Please enter your confirm password must not be more than 20 characters long",
             equalTo: "Please enter your password and confirm password as same."
           }
       },

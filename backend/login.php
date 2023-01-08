@@ -1,6 +1,6 @@
 <?php
 include('conn.php');
-print_r($_POST);
+//print_r($_POST);
 if(isset($_POST['loginformsubmit'])) {
     $username = isset($_POST['username']) ? $_POST['username'] : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
