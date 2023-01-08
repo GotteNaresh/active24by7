@@ -46,13 +46,12 @@ width: 626px;
     border: 2px solid #0880e8;
     background: #fff;
 }
-.contact-us-form label.error, .lead-us-form label.error {
+.contact-us-form label.error, .lead-us-form label.error, .signup-form label.error, .login-form label.error, .forgotpassword-form label.error {
     color: red;
     font-size: 16px;
     font-weight: 600;
 }
 .status-message {
-    height: 30px;
     text-align: center;
     background: #f8f9fa;
 }
@@ -61,9 +60,14 @@ width: 626px;
     font-size: 20px;
     font-weight: 900;
 }
+.status-message .error {
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
+}
 @media only screen and (min-width: 768px) {
     .carousel-container .slide {
-        width: 850px;
+        width: 100%;
         height: 315px;
         transition: none 0s ease 0s;
         text-align: inherit;
@@ -104,16 +108,16 @@ background: #006a4d;
     
 }
 
-.pricing .btn-buy {
+.courses .btn-buy {
     background: #FF0006;
 }
 
-.pricing .featured h3 {
+.courses .featured h3 {
     color: #fff;
     background: rgba(8, 79, 13, 0.8);
 }
 
-.pricing h3 {
+.courses h3 {
     color: #006a4d;
 }
 
@@ -127,11 +131,11 @@ background: #006a4d;
     background: #FF0006;
 }
 
-.pricing .advanced {
+.courses .advanced {
 background: #FCB61A;
 }
 
-.pricing h4 {
+.courses h4 {
 color: #FF0006;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
@@ -206,7 +210,7 @@ color: #FF0006;
     font-size: 18px;
     line-height: 1;
 }
-#pricing .col-lg-3, .pricing .box {
+#courses .col-lg-3, .courses .box {
     height: 512px;
 }
 .nav-link:hover {
@@ -214,4 +218,10 @@ color: #FF0006;
 }
 .about .content ul i {
 color: #006a4d;
+}
+#login, #forgotpassword {
+    height: 630px;
+}
+#forgotPassword .container {
+    width: 100%;
 }
